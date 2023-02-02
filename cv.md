@@ -11,7 +11,8 @@ I have good interpersonal skills, ready to learn and develop new skills to work 
 * CSS
 * Git, GitHub
 ## Code Example
-```function sum(a, b) {
+```javascript
+function sum(a, b) {
   return a + b;
 }
 
