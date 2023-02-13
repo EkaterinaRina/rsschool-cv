@@ -87,8 +87,8 @@ body {
 .section-profile {
   display: flex;
   position: absolute;
-  top: 66px;
-  left: 302px;
+  top: 50px;
+  left: 320px;
 }
 
 .section-title-profile {
@@ -102,29 +102,35 @@ body {
 
 .profession {
   position: absolute;
-  top: 112px;
-  left: 305px;
+  top: 97px;
+  left: 323px;
   padding: 0 5px;
   border-radius: 3px;
   background-color: #ffc905;
   box-shadow: 0px 4px 5px rgb(71, 71, 71);
 }
 
+h3 {
+  font-family: "CabinBold";
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
 .image {
   display: flex;
   position: relative;
   left: 16px;
-  overflow: hidden;
   margin: 0;
 }
 
 .rectangle {
-  width: 48px;
+  width: 69px;
   height: 265px;
   background-color: #FFC905;
   opacity: 0.7;
-  position: relative;
-  left: -208.5px;
+  position: absolute;
+  left: 16px;
 }
 
 /*
@@ -157,8 +163,31 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: rgb(255, 255, 255);
-  margin-top: 45px;
+  margin-top: 50px;
 }
+
+
+.section-title-about {
+  font-family: "CabinBold";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+}
+
+.section-title-about::after {
+  content: "";
+  width: 17px;
+  height: 2px;
+  background-color: #FFC905;
+  display: block;
+  transform: translateY(3px);
+  position: relative;
+  left: -2px;
+}
+
 
 .section-title::after {
   content: "";
@@ -174,7 +203,7 @@ body {
 .left-column {
   background-color: #292935;
   width: 270px;
-  height: 500px;
+  height: 600px;
 }
 
 .text-left {
@@ -184,7 +213,7 @@ body {
 }
 
 h4 {
-  margin-top: 5px;
+  margin-top: 10px;
   font-family: "CabinRegular";
   color: white;
   font-weight: 400;
@@ -195,16 +224,16 @@ p {
   font-family: "CabinRegular";
   color: white;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .paragraph-education {
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .paragraph {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .languages {
@@ -217,13 +246,62 @@ p {
 .right-column {
   background-color: #22222f;
   width: 630px;
-  height: 500px;
+  height: 600px;
 }
 
 .right-text {
-  margin-left: 35px;
+  margin-left: 60px;
   margin-right: 20px;
   margin-top: 5px;
+}
+
+
+.about-me {
+  margin-top: 10px;
+  color: #000000;
+  font-family: "CabinRegular";
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.section-about {
+  width: 500px;
+  position: absolute;
+  top: 110px;
+  left: 323px;
+}
+
+#skills-markers {
+  list-style-type: square;
+  font-family: "CabinRegular";
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  position: relative;
+  top: 10px;
+}
+
+.skills-span {
+  color: white;
+}
+
+.skill {
+  color: #FFC905;
+}
+
+
+pre {
+  font-family: "CabinRegular";
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.code {
+  background-color: #292935;
+  width: 50%;
+  margin-top: 10px;
 }
 
 
@@ -269,7 +347,7 @@ p {
 
 .text-contacts {
   font-family: "CabinBold";
-  font-weight: 400;
+  font-weight: 600;
   color: white;
 }
 
@@ -291,12 +369,63 @@ h5 {
 }
 
 .right-footer-text {
-  margin-left: 35px;
+  margin-left: 60px;
   display: flex;
   position: relative;
-  bottom: 10px;
+  bottom: 15px;
 }
 
+h6 {
+  font-family: "CabinBold";
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+}
+
+.interests{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  position: absolute;
+  top: 120px;
+}
+.drawing-text{
+  display: flex;
+  position: relative;
+  left: -12px;
+}
+.music-text{
+  display: flex;
+  position: relative;
+  left: -6px;
+}
+.travel-text{
+  display: flex;
+  position: relative;
+  left: -6px;
+}
+.year{
+  font-family: "CabinRegular";
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  left: 15px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  background-color: #292935;
+  height: 50px;
+  width: 500px;
+  position: absolute;
+  bottom: 0px;
+  left: 335px;
+}
+.image-logo{
+position: absolute;
+right: 15px;
+}
 .container {
   max-width: 1440px;
 }

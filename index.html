@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>cv</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -42,6 +43,17 @@
             <section class="profession">
               <h3>Frontend-developer</h3>
             </section>
+            <section class="section-about" id="about">
+              <h2 class="section-title-about">About me</h2>
+              <p class="about-me">
+                I'm 23 years old and I'm studying front-end development. I like
+                to study and learn something new. Now I'm currently studying for
+                a master's degree. In the future, I want to work in a strong
+                team on extraordinary projects. I would like to make beautiful
+                interactive websites. I hope my diligence and courses will help
+                me gain the necessary knowledge for future work.
+              </p>
+            </section>
           </div>
         </div>
       </header>
@@ -73,16 +85,39 @@
           </div>
           <div class="right-column">
             <div class="right-text">
-              <section class="section" id="about">
-                <h2 class="section-title">About me</h2>
-              </section>
               <section class="section" id="skills">
-               <h2 class="section-title">Skills</h2>
+                <h2 class="section-title">Skills</h2>
               </section>
+              <un id="skills-markers">
+                <li class="skill"><span class="skills-span">HTML</span></li>
+                <li class="skill"><span class="skills-span">CSS</span></li>
+                <li class="skill">
+                  <span class="skills-span">Adobe Photoshop</span>
+                </li>
+                <li class="skill">
+                  <span class="skills-span">Git, GitHub</span>
+                </li>
+                <li class="skill"><span class="skills-span">Figma</span></li>
+                <li class="skill">
+                  <span class="skills-span">VS Code</span>
+                </li>
+              </un>
+
               <section class="section" id="code">
-               <h2 class="section-title">Code example</h2>
-             </section>
-          </div>
+                <h2 class="section-title">Code example</h2>
+                <div class="code">
+                  <pre>
+ 
+                function sum(a, b) {
+                  return a + b;
+                }
+                let result = sum(1, 2);
+                alert( result );     
+              </pre
+                  >
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </main>
@@ -100,35 +135,41 @@
                     class="image-phone"
                     src="image/telephone.png"
                     alt="phone"
-                    width="25px"
-                    height="25px"
+                    width="25"
+                    height="25"
                   />
-                  <a href="mailto:catherinemarsiano@gmail.com" class="contact-link">
+                  <a
+                    href="mailto:catherinemarsiano@gmail.com"
+                    class="contact-link"
+                  >
                     <img
                       class="image-email"
                       src="image/email.png"
                       alt="mail"
-                      width="25px"
-                      height="25px"
+                      width="25"
+                      height="25"
                     />
                   </a>
-                  <a href="https://telegram.me/cathines" class="contact-link"> 
+                  <a href="https://telegram.me/cathines" class="contact-link">
                     <img
-                    class="image-telegram"
-                    src="image/telegram.png"
-                    alt="instagram"
-                    width="25px"
-                    height="25px"
-                  />
+                      class="image-telegram"
+                      src="image/telegram.png"
+                      alt="instagram"
+                      width="25"
+                      height="25"
+                    />
                   </a>
-                  <a href="https://github.com/EkaterinaRina" class="contact-link"> 
-                  <img
-                    class="image-git"
-                    src="image/GitHub.png"
-                    alt="GitHub"
-                    width="25px"
-                    height="25px"
-                  />
+                  <a
+                    href="https://github.com/EkaterinaRina"
+                    class="contact-link"
+                  >
+                    <img
+                      class="image-git"
+                      src="image/GitHub.png"
+                      alt="GitHub"
+                      width="25"
+                      height="25"
+                    />
                   </a>
                 </div>
                 <div class="text-contacts">
@@ -147,9 +188,62 @@
           <div class="right-footer">
             <div class="right-footer-text">
               <section class="section" id="interests">
-               <h2 class="section-title">Interests</h2>
-             </section>
-          </div>
+                <h2 class="section-title">Interests</h2>
+              </section>
+              <div class="interests">
+                <div class="drawing">
+                  <div class="drawing-image">
+                    <img
+                      src="image/palette.png"
+                      alt="palette"
+                      class="palette"
+                      width="30"
+                      height="30"
+                    />
+                    <div class="drawing-text">
+                      <h6>Drawing</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="music">
+                  <div class="music-image">
+                    <img
+                      src="image/music.png"
+                      alt="note"
+                      class="note"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <div class="music-text">
+                    <h6>Music</h6>
+                  </div>
+                </div>
+                <div class="travel">
+                  <div class="travel-image">
+                    <img
+                      src="image/travel.png"
+                      alt="travel"
+                      class="travel"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <div class="travel-text">
+                    <h6>Travel</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="logo">
+              <p class="year">© 2021</p>
+              <img
+                src="image/rs_school_js.svg"
+                alt="logo"
+                width="80"
+                class="image-logo"
+              />
+            </div>
           </div>
         </div>
       </footer>
