@@ -1,0 +1,431 @@
+@font-face {
+  font-family: "CabinBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/Cabin-SemiBold.ttf");
+
+}
+
+@font-face {
+  font-family: "CabinRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/Cabin-Regular.ttf");
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "CabinRegular" sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #1e1e1e;
+}
+
+.body-container {
+  margin: 20px auto;
+  position: relative;
+  width: 900px;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 265px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.header_container {
+  display: flex;
+
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  display: flex;
+  /* justify-content: flex-end;
+  align-items: center;*/
+  position: relative;
+  top: 0px;
+  left: 0px;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: "CabinBold";
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #ffc905;
+}
+
+.section-profile {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 320px;
+}
+
+.section-title-profile {
+  font-family: "CabinBold";
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: black;
+}
+
+.profession {
+  position: absolute;
+  top: 97px;
+  left: 323px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background-color: #ffc905;
+  box-shadow: 0px 4px 5px rgb(71, 71, 71);
+}
+
+h3 {
+  font-family: "CabinBold";
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.image {
+  display: flex;
+  position: relative;
+  left: 16px;
+  margin: 0;
+}
+
+.rectangle {
+  width: 69px;
+  height: 265px;
+  background-color: #FFC905;
+  opacity: 0.7;
+  position: absolute;
+  left: 16px;
+}
+
+/*
+#profile{
+  display: flex;
+}*/
+
+.main {
+  border: none;
+}
+
+.main-container {
+  display: flex;
+
+}
+
+/*.section {
+  width: 50%;
+}*/
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.section-title {
+  font-family: "CabinBold";
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+}
+
+
+.section-title-about {
+  font-family: "CabinBold";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+}
+
+.section-title-about::after {
+  content: "";
+  width: 17px;
+  height: 2px;
+  background-color: #FFC905;
+  display: block;
+  transform: translateY(3px);
+  position: relative;
+  left: -2px;
+}
+
+
+.section-title::after {
+  content: "";
+  width: 17px;
+  height: 2px;
+  background-color: #FFC905;
+  display: block;
+  transform: translateY(3px);
+  position: relative;
+  left: -2px;
+}
+
+.left-column {
+  background-color: #292935;
+  width: 270px;
+  height: 600px;
+}
+
+.text-left {
+  margin-left: 17px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+h4 {
+  margin-top: 10px;
+  font-family: "CabinRegular";
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+p {
+  font-family: "CabinRegular";
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.paragraph-education {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.paragraph {
+  margin-top: 20px;
+}
+
+.languages {
+  padding: 1px 5px;
+  border-radius: 3px;
+  background-color: #ffc905;
+  color: #000000;
+}
+
+.right-column {
+  background-color: #22222f;
+  width: 630px;
+  height: 600px;
+}
+
+.right-text {
+  margin-left: 60px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+
+.about-me {
+  margin-top: 10px;
+  color: #000000;
+  font-family: "CabinRegular";
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.section-about {
+  width: 500px;
+  position: absolute;
+  top: 110px;
+  left: 323px;
+}
+
+#skills-markers {
+  list-style-type: square;
+  font-family: "CabinRegular";
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  position: relative;
+  top: 10px;
+}
+
+.skills-span {
+  color: white;
+}
+
+.skill {
+  color: #FFC905;
+}
+
+
+pre {
+  font-family: "CabinRegular";
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.code {
+  background-color: #292935;
+  width: 50%;
+  margin-top: 10px;
+}
+
+
+.footer {
+  border: none;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.left-footer {
+  background-color: #292935;
+  width: 270px;
+  height: 250px;
+}
+
+#square {
+  width: 48px;
+  height: 174px;
+  background: #FFC905;
+  position: relative;
+  left: -2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.image-phone {
+  margin-bottom: 5px;
+}
+
+.section-title-footer {
+  margin-top: 35px;
+}
+
+.footer-contacts {
+  display: flex;
+
+}
+
+.text-contacts {
+  font-family: "CabinBold";
+  font-weight: 600;
+  color: white;
+}
+
+h5 {
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.contacts {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+
+.right-footer {
+  background-color: #22222f;
+  width: 630px;
+}
+
+.right-footer-text {
+  margin-left: 60px;
+  display: flex;
+  position: relative;
+  bottom: 15px;
+}
+
+h6 {
+  font-family: "CabinBold";
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+}
+
+.interests{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  position: absolute;
+  top: 120px;
+}
+.drawing-text{
+  display: flex;
+  position: relative;
+  left: -12px;
+}
+.music-text{
+  display: flex;
+  position: relative;
+  left: -6px;
+}
+.travel-text{
+  display: flex;
+  position: relative;
+  left: -6px;
+}
+.year{
+  font-family: "CabinRegular";
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  left: 15px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  background-color: #292935;
+  height: 50px;
+  width: 500px;
+  position: absolute;
+  bottom: 0px;
+  left: 335px;
+}
+.image-logo{
+position: absolute;
+right: 15px;
+}
+.container {
+  max-width: 1440px;
+}
